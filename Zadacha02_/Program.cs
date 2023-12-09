@@ -11,7 +11,7 @@ int FuncAkkerman(int n, int m)
         int x = int.Parse(Console.ReadLine()!);
         Console.Write("Введите число N: ");
         int y = int.Parse(Console.ReadLine()!);
-        return FuncAkkerman(x, y);
+        return FuncAkkerman(y, x);
     }
     else
 
@@ -25,4 +25,4 @@ int m = int.Parse(Console.ReadLine()!);
 Console.Write("Введите число N: ");
 int n = int.Parse(Console.ReadLine()!);
 
-Console.Write($"Функция Аккермана от ({m}, {n}) равна: {FuncAkkerman(n, m)}");
+Console.Write($"Функция Аккермана равна: {FuncAkkerman(n, m)}");
