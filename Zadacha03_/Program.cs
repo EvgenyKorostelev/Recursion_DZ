@@ -12,7 +12,7 @@ int[] CreateArray(int min, int max, int size)
     return array;
 }
 
-void PrintCycleArray(int[] array)
+void PrintArrayCycle(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -42,6 +42,6 @@ int max = int.Parse(Console.ReadLine()!);
 int[] arr = CreateArray(min, max, size);
 Console.WriteLine();
 Console.WriteLine($"Исходный массив циклом: ");
-PrintCycleArray(arr);
+PrintArrayCycle(arr);
 Console.WriteLine($"Полученный массив массив рекурсией: ");
 PrintArrayRecursion(arr, size);
